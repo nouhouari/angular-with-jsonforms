@@ -1,0 +1,90 @@
+{
+    "type": "object",
+    "title": "Autocomplete example",
+    "properties": {
+      "_header": {
+        "type": "string",
+        "format": "hidden",
+        "title": "Autocomplete example",
+        "description": "<p>This example shows various setups using the autocomplete editor, based on the <a href=\"https://autocomplete.trevoreyre.com/#/javascript-component\" target=\"_blank\">autocomplete</a> library. The setup for each lookup engine is defined in a special callback list.</p>",
+        "options": {
+          "grid_columns": 12
+        }
+      },
+      "text": {
+        "type": "string",
+        "format": "autocomplete",
+        "title": "Wikipedia lookup (Page titles)",
+        "description": "Enter a text of minimum 3 characters.",
+        "options": {
+          "grid_columns": 6,
+          "autocomplete": {
+            "search": "search_wikipedia",
+            "getResultValue": "getResultValue_wikipedia",
+            "renderResult": "renderResult_wikipedia",
+            "autoSelect": true
+          }
+        }
+      },
+      "text2": {
+        "type": "string",
+        "format": "autocomplete",
+        "title": "DAWA lookup (Danish streetnames)",
+        "description": "Enter a text of minimum 3 characters.",
+        "options": {
+          "grid_columns": 6,
+          "autocomplete": {
+            "search": "search_dawa",
+            "getResultValue": "getResultValue_dawa",
+            "autoSelect": true
+          }
+        }
+      },
+      "text3": {
+        "type": "string",
+        "format": "autocomplete",
+        "title": "Restcountries lookup (Countries)",
+        "description": "Enter a text of minimum 3 characters.",
+        "options": {
+          "grid_columns": 6,
+          "autocomplete": {
+            "search": "search_restcountries",
+            "getResultValue": "getResultValue_restcountries",
+            "renderResult": "renderResult_restcountries",
+            "autoSelect": true
+          }
+        }
+      },
+      "text4": {
+        "type": "string",
+        "format": "autocomplete",
+        "title": "Local form lookup (Font names from 'possibleFonts' array)",
+        "description": "Enter a text of minimum 1 characters. (Try 'a')",
+        "options": {
+          "grid_columns": 6,
+          "autocomplete": {
+            "search": "search_local",
+            "autoSelect": true
+          }
+        }
+      },
+      "possibleFonts": {
+        "type": "array",
+        "format": "table",
+        "items": {
+          "type": "string"
+        },
+        "default": [
+          "Arial",
+          "Arial Black",
+          "Times",
+          "Tahoma",
+          "Helvetica",
+          "Comic Sans"
+        ],
+        "options": {
+          "collapsed": true
+        }
+      }
+    }
+  }

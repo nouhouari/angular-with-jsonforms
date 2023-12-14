@@ -3,7 +3,45 @@
   "elements": [
     {
       "type": "Control",
-      "scope": "#/properties/ammount"
+      "scope": "#/properties/aboutme",
+      "options": {
+        "multi": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/firstname"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/lastname"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/gender"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/email"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/french",
+      "options": {
+        "toggle": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/age"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/birthday"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/drugs"
     }
   ]
 }
